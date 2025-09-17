@@ -26,9 +26,6 @@ class MainActivity6 : AppCompatActivity() {
             , "Dividir")
 
 
-
-
-
         val adaptador = ArrayAdapter(this
             , android.R.layout.simple_list_item_1
             , opcionesArr)
@@ -39,8 +36,6 @@ class MainActivity6 : AppCompatActivity() {
             val itemElegido = parent.getItemAtPosition(position).toString()
             Toast.makeText(this, itemElegido, Toast.LENGTH_SHORT).show()
         }
-
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
